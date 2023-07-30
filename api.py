@@ -10,6 +10,12 @@ class listRequestHandler(tornado.web):
         fh.close()
         #return as a json element
         self.write(json.dumps(fruits))
+    def post(self): 
+        fruit = self.get_argument("fruit")
+        fh = open("list.txt", "a")
+        fh.write(f"{fruit}\n")
+        fh.close()
+        self.write(json.dumps({"message": "Fruit added successfully."}))
     
 if __name__ == "__main__": 
     app = tornado.web.Application([
