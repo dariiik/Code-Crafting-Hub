@@ -1,1 +1,1 @@
-# Backend
+This repository was created by me, in which there are some codes that I will need in my workplace as a Software Development Engineer. It includes three of my favourite programming languages: Ruby on Rails, JavaScript, and Python. Every single code is for Backend Programming, Database and some other cool stuff that I will need for the workplace!
